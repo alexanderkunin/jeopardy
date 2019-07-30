@@ -34,7 +34,7 @@ export class TeamServiceService {
   }
 
   public reset() {
-    this.teams = [new Team('Insulin'), new Team('Glucose')];
+    this.teams = [new Team('Team "Insulin"'), new Team('Team "Glucose"')];
     this.turn = 0;
     this.numberOfQuestions = 0;
     this.categories = CATEGORIES;

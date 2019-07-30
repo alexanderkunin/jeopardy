@@ -3,9 +3,8 @@
 }
 
 .col {
-  border: solid 1px rgb(136, 118, 118);
+  border: solid 1px #887676;
   border-radius: 4px;
-  color: white;
   text-align: center;
   font-size: 26px;
   font-weight: 400;
@@ -13,8 +12,9 @@
 }
 
 .selected {
-  font-weight: 800;
-  color: black;
+  font-weight: 600;
+  font-size: 30px;
+  color: #1eff00;
   cursor: default;
 }
 

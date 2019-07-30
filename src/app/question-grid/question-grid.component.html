@@ -4,6 +4,7 @@
     <div fxLayout="row" fxLayoutAlign="center start">
       <div class='team'>
         {{teams[0].name}}: <span [ngClass]="teams[0].sugar > 7 ? 'high' : 'normal'"> {{teams[0].sugar |  number :'1.1-1'}}
+          mmol/L
         </span>
       </div>
       <div style='width: 100%; text-align: center;'>
@@ -12,6 +13,7 @@
       </div>
       <div class='team'>
         {{teams[1].name}}: <span [ngClass]="teams[1].sugar > 7 ? 'high' : 'normal'"> {{teams[1].sugar | number :'1.1-1'  }}
+          mmol/L
         </span>
       </div>
     </div>
