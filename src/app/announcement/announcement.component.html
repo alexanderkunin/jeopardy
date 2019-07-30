@@ -1,5 +1,20 @@
+<div *ngIf="teams[0].sugar <= 7 || teams[1].sugar <= 7; else nicetry">
+  <div class='team normal'>
+    Good Job!
+  </div>
+</div>
+<ng-template #nicetry>
+  <div class='team high'>
+    Nice Try!
+  </div>
+</ng-template>
 <div class='team' *ngIf="winningTeam">
-  {{winningTeam.name}} wins with score {{teams[0].score}} and sugar {{teams[0].sugar |  number :'1.1-1'}}
+  <div style='font-size: 50px'>
+    {{winningTeam.name}} wins!
+  </div>
+  <div>
+    Score {{teams[0].score}} points and sugar {{teams[0].sugar |  number :'1.1-1'}}
+  </div>
 </div>
 <div class='team' *ngIf="winningTeam == null">
   Both teams win with sugar score {{teams[0].sugar |  number :'1.1-1'}}

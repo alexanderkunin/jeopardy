@@ -48,17 +48,7 @@
     <app-question-viewer [question]='questionSelected' [event]='event' [team]='currentTeam()'></app-question-viewer>
 
     <div *ngIf="noOfQestions === 0" style='padding-top: 200px;'>
-      <div *ngIf="teams[0].sugar <= 7 || teams[1].sugar <= 7; else nicetry">
-        <div class='team normal'>
-          Good Job!
-        </div>
-      </div>
-      <ng-template #nicetry>
-        <div class='team high'>
-          Nice Try!
-        </div>
-      </ng-template>
-      <app-announcement [teams]='teams' *ngIf="noOfQestions === 0"></app-announcement>
+      <app-announcement [teams]='teams'></app-announcement>
     </div>
   </div>
 </div>

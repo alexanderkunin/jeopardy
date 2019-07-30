@@ -13,9 +13,9 @@ export class AnnouncementComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    if (this.teams[0].score < this.teams[1].score) {
+    if (this.teams[0].score > this.teams[1].score) {
       this.winningTeam = this.teams[0];
-    } else if (this.teams[0].score > this.teams[1].score) {
+    } else if (this.teams[0].score < this.teams[1].score) {
       this.winningTeam = this.teams[1];
     } else {
       this.winningTeam = null;
