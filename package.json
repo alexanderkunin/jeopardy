@@ -7,19 +7,26 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "serve": "concurrently \"ng serve\" \"server\\node_modules\\.bin\\ts-node-dev server\\server.ts\"",
+    "start-s": "./server/node_modules/.bin/ts-node-dev ./server/server.ts"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.0.0",
+    "@angular/cdk": "^8.1.1",
     "@angular/common": "~8.0.0",
     "@angular/compiler": "~8.0.0",
     "@angular/core": "~8.0.0",
+    "@angular/flex-layout": "^8.0.0-beta.26",
     "@angular/forms": "~8.0.0",
     "@angular/platform-browser": "~8.0.0",
     "@angular/platform-browser-dynamic": "~8.0.0",
     "@angular/router": "~8.0.0",
+    "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.1",
     "rxjs": "~6.4.0",
+    "ts-node-dev": "^1.0.0-pre.40",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },
