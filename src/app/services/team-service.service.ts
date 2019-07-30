@@ -36,6 +36,7 @@ export class TeamServiceService {
   public reset() {
     this.teams = [new Team('Team A'), new Team('Team B')];
     this.turn = 0;
+    this.numberOfQuestions = 0;
     this.categories = CATEGORIES;
     for (const cat of this.categories) {
       for (const q of cat.questions) {
@@ -57,12 +58,17 @@ export class TeamServiceService {
   public answer(question: Question) {
     const current = this.teams[this.turn];
     current.score += question.points;
-    current.sugar -= question.points;
+    if (current.sugar > 5) {
+      current.sugar -= (question.points / 1000);
+    } else {
+      current.sugar -= (question.points / 1500);
+    }
     if (this.turn === 0) {
       this.turn = 1;
     } else {
       this.turn = 0;
     }
+    this.numberOfQuestions -= 1;
     this.saveState();
   }
 

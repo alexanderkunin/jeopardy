@@ -6,21 +6,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuestionGridComponent } from './question-grid/question-grid.component';
 import { QuestionViewerComponent } from './question-viewer/question-viewer.component';
+import { AnnouncementComponent } from './announcement/announcement.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    QuestionGridComponent,
-    QuestionViewerComponent
-  ],
-  imports: [
-    BrowserModule,
-    FlexLayoutModule,
-    AppRoutingModule
-  ],
-  providers: [TeamServiceService],
-  bootstrap: [
-    AppComponent
-  ]
+   declarations: [
+      AppComponent,
+      QuestionGridComponent,
+      QuestionViewerComponent,
+      AnnouncementComponent
+   ],
+   imports: [
+      BrowserModule,
+      FlexLayoutModule,
+      AppRoutingModule
+   ],
+   providers: [
+      TeamServiceService
+   ],
+   bootstrap: [
+      AppComponent
+   ]
 })
 export class AppModule { }

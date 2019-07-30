@@ -3,14 +3,16 @@
   <div fxLayout="column" fxLayoutAlign="space-around center" style='min-width: 1200px;'>
     <div fxLayout="row" fxLayoutAlign="center start">
       <div class='team'>
-        {{teams[0].name}}: <span [ngClass]="teams[0].sugar > 7000 ? 'high' : 'normal'"> {{teams[0].sugar}} </span>
+        {{teams[0].name}}: <span [ngClass]="teams[0].sugar > 7 ? 'high' : 'normal'"> {{teams[0].sugar |  number :'1.1-1'}}
+        </span>
       </div>
       <div style='width: 100%; text-align: center;'>
         <button type="button" class="btn btn-danger" (click)='resetGame()'>Reset</button>
         <button type="button" class="btn btn-warning" (click)='completeGame()'>Complete</button>
       </div>
       <div class='team'>
-        {{teams[1].name}}: <span [ngClass]="teams[1].sugar > 7000 ? 'high' : 'normal'"> {{teams[1].sugar}} </span>
+        {{teams[1].name}}: <span [ngClass]="teams[1].sugar > 7 ? 'high' : 'normal'"> {{teams[1].sugar | number :'1.1-1'  }}
+        </span>
       </div>
     </div>
     <div class="container" style='min-width: 1200px;'>
@@ -42,10 +44,11 @@
         </div>
       </div>
     </div>
+
     <app-question-viewer [question]='questionSelected' [event]='event' [team]='currentTeam()'></app-question-viewer>
 
     <div *ngIf="noOfQestions === 0" style='padding-top: 200px;'>
-      <div *ngIf="teams[0].sugar <= 7000 || teams[1].sugar <= 7000; else nicetry">
+      <div *ngIf="teams[0].sugar <= 7 || teams[1].sugar <= 7; else nicetry">
         <div class='team normal'>
           Good Job!
         </div>
@@ -55,14 +58,7 @@
           Nice Try!
         </div>
       </ng-template>
-      <div class='team' *ngIf="teams[0].sugar < teams[1].sugar; else opposite">
-        {{teams[0].name}} wins with sugar score {{teams[0].sugar}}
-      </div>
-      <ng-template #opposite>
-        <div class='team'>
-          {{teams[1].name}} wins with sugar score {{teams[1].sugar}}
-        </div>
-      </ng-template>
+      <app-announcement [teams]='teams' *ngIf="noOfQestions === 0"></app-announcement>
     </div>
   </div>
 </div>

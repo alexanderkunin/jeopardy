@@ -23,14 +23,13 @@ export class QuestionGridComponent implements OnInit {
 
     this.event.subscribe((question: number | Question) => {
       if (typeof question === 'number') {
-        if (question < 0) {
-          this.questionSelected = null;
-        } else {
+        if (question === 0) {
           this.teamServiceService.changeTurn();
         }
       } else {
         this.teamServiceService.answer(question);
       }
+      this.questionSelected = null;
       this.noOfQestions = this.teamServiceService.getNumberOfQuestions();
     });
   }

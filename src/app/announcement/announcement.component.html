@@ -1,0 +1,6 @@
+<div class='team' *ngIf="winningTeam">
+  {{winningTeam.name}} wins with score {{teams[0].score}} and sugar {{teams[0].sugar |  number :'1.1-1'}}
+</div>
+<div class='team' *ngIf="winningTeam == null">
+  Both teams win with sugar score {{teams[0].sugar |  number :'1.1-1'}}
+</div>

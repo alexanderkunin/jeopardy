@@ -16,8 +16,8 @@ export const CATEGORIES: Category[] = [
         points: 300, color: 'monitoring', activated: false
       },
       {
-        body: 'What is bg reading that is considered \"low\"? how many grams of fast acting sugar is appropriate to treat this?\
-         please give examples', answer: '',
+        body: 'What is BG reading that is considered \"low\"? How many grams of fast acting sugar is appropriate to treat this?\
+         Please give examples', answer: '',
         points: 400, color: 'monitoring', activated: false
       },
       {
@@ -107,7 +107,7 @@ export const CATEGORIES: Category[] = [
         points: 100, color: 'complications', activated: false
       },
       {
-        body: 'What are \"abc\'s\" of diabetes? Why are they important?', answer: '',
+        body: 'What are \"ABC\'s\" of diabetes? Why are they important?', answer: '',
         points: 200, color: 'complications', activated: false
       },
       {
@@ -131,7 +131,7 @@ export const CATEGORIES: Category[] = [
         points: 100, color: 'bonus', activated: false
       },
       {
-        body: 'If i take insulin, I have transformed from type 2 to type 1 diabetes. True or False?', answer: '',
+        body: 'If I take insulin, I have transformed from type 2 to type 1 diabetes. True or False?', answer: '',
         points: 200, color: 'bonus', activated: false
       },
       {
