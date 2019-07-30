@@ -67,6 +67,7 @@ export class QuestionGridComponent implements OnInit {
   }
 
   completeGame() {
+    this.questionSelected = null;
     this.noOfQestions = 0;
   }
 }
