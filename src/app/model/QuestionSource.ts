@@ -95,7 +95,7 @@ export const CATEGORIES: Category[] = [
         points: 400, color: 'exercise', activated: false
       },
       {
-        body: 'How many minutes of each type of exercise does the CDA (Canadian Diabetes Association) recommend per week?', answer: '',
+        body: 'How many minutes of each type of exercise does the Diabetes Canada recommend per week?', answer: '',
         points: 500, color: 'exercise', activated: false
       }
     ]

@@ -3,8 +3,9 @@
 }
 
 .col {
-  border: solid 1px #887676;
-  border-radius: 4px;
+  border: solid 1px #555050;
+  border-radius: 30px;
+  margin: 2px;
   text-align: center;
   font-size: 26px;
   font-weight: 400;
@@ -21,4 +22,15 @@
 .disabled {
   color: rgb(97, 96, 96);
   cursor: default;
+}
+
+.footer {
+  background-color: #e9e5e5;
+  position: fixed;
+  height: 40px;
+  text-align: center;
+  padding-top: 8px;
+  bottom: 0;
+  width: 100%;
+  font-family: "Caveat", cursive;
 }
