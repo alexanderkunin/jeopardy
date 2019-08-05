@@ -77,7 +77,7 @@ export class TeamService {
     }
 
     const sugar2 = current.sugar;
-    if (sugar1 >= 7 && sugar2 < 7) {
+    if (sugar1 > 7 && sugar2 <= 7) {
       current.congrats = true;
     } else {
       current.congrats = false;
