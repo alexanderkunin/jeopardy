@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TeamServiceService } from './services/team-service.service';
+import { TeamService } from './services/team.service';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,6 @@ import { TeamServiceService } from './services/team-service.service';
 export class AppComponent {
   title = 'Jeopardy';
 
-  constructor(private teamServiceService: TeamServiceService) {
+  constructor(private teamServiceService: TeamService) {
   }
 }

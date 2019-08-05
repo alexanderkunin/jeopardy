@@ -1,4 +1,4 @@
-import { TeamServiceService } from './../services/team-service.service';
+import { TeamService as TeamService } from '../services/team.service';
 import { Subject } from 'rxjs';
 import { Question } from './../model/Question';
 import { Component, OnInit } from '@angular/core';
@@ -16,7 +16,7 @@ export class QuestionGridComponent implements OnInit {
   teams: Team[];
   event = new Subject<Question>();
 
-  constructor(private teamServiceService: TeamServiceService) { }
+  constructor(private teamService: TeamService) { }
 
   ngOnInit() {
     this.init();
@@ -24,13 +24,13 @@ export class QuestionGridComponent implements OnInit {
     this.event.subscribe((question: number | Question) => {
       if (typeof question === 'number') {
         if (question === 0) {
-          this.teamServiceService.changeTurn();
+          this.teamService.changeTurn();
         }
       } else {
-        this.teamServiceService.answer(question);
+        this.teamService.answer(question);
       }
       this.questionSelected = null;
-      this.noOfQestions = this.teamServiceService.getNumberOfQuestions();
+      this.noOfQestions = this.teamService.getNumberOfQuestions();
     });
   }
 
@@ -41,19 +41,22 @@ export class QuestionGridComponent implements OnInit {
   }
 
   currentTeam(): Team {
-    return this.teamServiceService.getCurrentTeam();
+    return this.teamService.getCurrentTeam();
   }
 
   resetGame() {
-    this.teamServiceService.reset();
-    this.init();
+    this.teamService.reset()
+      .then(
+        () => this.init()
+      );
+    ;
   }
 
   init() {
     this.questionSelected = null;
-    this.noOfQestions = this.teamServiceService.getNumberOfQuestions();
-    this.teams = this.teamServiceService.getTeams();
-    const categories = this.teamServiceService.getCategories();
+    this.noOfQestions = this.teamService.getNumberOfQuestions();
+    this.teams = this.teamService.getTeams();
+    const categories = this.teamService.getCategories();
     for (let i = 0; i < categories.length; i++) {
       const cat = categories[i];
       for (let j = 0; j < cat.questions.length; j++) {

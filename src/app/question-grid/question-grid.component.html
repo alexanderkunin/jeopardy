@@ -2,8 +2,9 @@
 
   <div fxLayout="column" fxLayoutAlign="space-around center" style='min-width: 1200px;'>
     <div fxLayout="row" fxLayoutAlign="center start">
-      <div class='team'>
-        {{teams[0].name}}: <span [ngClass]="teams[0].sugar > 7 ? 'high' : 'normal'"> {{teams[0].sugar |  number :'1.1-1'}}
+      <div class='team' [ngClass]="teams[0].congrats ? 'shake' : ''">
+        {{teams[0].name}}: <span [ngClass]="teams[0].sugar > 7 ? 'high' : 'normal'">
+          {{teams[0].sugar |  number :'1.1-1'}}
           mmol/L
         </span>
       </div>
@@ -11,7 +12,7 @@
         <button type="button" class="btn btn-danger" (click)='resetGame()'>Reset</button>
         <button type="button" class="btn btn-warning" (click)='completeGame()'>Complete</button>
       </div>
-      <div class='team'>
+      <div class='team' [ngClass]="teams[1].congrats ? 'shake' : ''">
         {{teams[1].name}}: <span [ngClass]="teams[1].sugar > 7 ? 'high' : 'normal'"> {{teams[1].sugar | number :'1.1-1'  }}
           mmol/L
         </span>
