@@ -1,4 +1,8 @@
-# DEGAME
+# Jeopardy - Diabetes Education
+
+
+To start playing go to  [Jeopardy](https://alexanderkunin.github.io/jeopardy)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 
