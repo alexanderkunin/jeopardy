@@ -1,9 +1,9 @@
 <div *ngIf="!!question" class='question-viewer'>
-  <div style='height: 3vh;'></div>
+  <div style='height: 2vh;'></div>
   <div [ngClass]="question.color" fxLayout='column' fxLayoutAlign="space-between center"
-    style='height: 35vh; padding: 10px; text-align: center; border-radius: 30px;'>
-    <div style='font-size: 5vh;'>{{team.name}}</div>
-    <div style='font-size: 5vh;'>{{question.body}}</div>
+    style='height: 30vh; padding: 10px; text-align: center; border-radius: 3vh;'>
+    <div>{{team.name}}</div>
+    <div>{{question.body}}</div>
     <div></div>
   </div>
   <div fxLayout='row' fxLayoutAlign="center end">
