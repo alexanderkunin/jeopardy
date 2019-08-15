@@ -26,7 +26,8 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/service-worker.js"
             ],
             "styles": [
               "src/styles.scss"
