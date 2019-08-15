@@ -7,6 +7,7 @@ module.exports = {
     'docs/index.html',
     'docs/**.js',
     'docs/**.css',
-    'docs/assets/data/**.json'
+    'docs/assets/data/**.json',
+    'docs/**.ico'
   ]
 };
