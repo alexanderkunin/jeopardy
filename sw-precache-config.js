@@ -1,5 +1,5 @@
 module.exports = {
-  navigateFallback: '/index.html',
+  navigateFallback: 'https://alexanderkunin.github.io/jeopardy/index.html',
   stripPrefix: 'docs',
   root: 'docs/',
   staticFileGlobs: [
