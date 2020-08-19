@@ -711,7 +711,7 @@ platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! k:\git\de-game\DE-GAME\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! K:\git\de-game\DE-GAME\src\main.ts */"./src/main.ts");
 
 
 /***/ })

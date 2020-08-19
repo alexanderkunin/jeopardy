@@ -439,7 +439,7 @@ module.exports = content.locals || {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! k:\git\de-game\DE-GAME\src\styles.scss */"./src/styles.scss");
+module.exports = __webpack_require__(/*! K:\git\de-game\DE-GAME\src\styles.scss */"./src/styles.scss");
 
 
 /***/ })

@@ -1126,7 +1126,7 @@
     /***/
     function _(module, exports, __webpack_require__) {
       module.exports = __webpack_require__(
-      /*! k:\git\de-game\DE-GAME\src\main.ts */
+      /*! K:\git\de-game\DE-GAME\src\main.ts */
       "./src/main.ts");
       /***/
     }
