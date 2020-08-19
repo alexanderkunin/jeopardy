@@ -17,14 +17,14 @@
         "activated": false
       },
       {
-        "body": "Name 3 circumstances that would be helpful to check blood sugars",
+        "body": "Name 3 situations when that would be helpful to check blood sugars",
         "answer": "",
         "points": 300,
         "color": "monitoring",
         "activated": false
       },
       {
-        "body": "What BG reading is considered \"low\"? How many grams of fast acting sugar is appropriate to treat this? Please give examples",
+        "body": "When is a BG reading considered \"low\"? How many grams of fast acting sugar is appropriate to treat this? Please give examples",
         "answer": "",
         "points": 400,
         "color": "monitoring",
@@ -90,21 +90,21 @@
         "activated": false
       },
       {
-        "body": "What are 2 ways you can lower cholesterol with food? eg. eat more ___ and eat less ___",
+        "body": "Why is it important to include more fibre? Name 3 foods that are high in fibre",
         "answer": "",
         "points": 200,
         "color": "nutrition",
         "activated": false
       },
       {
-        "body": "How many grams of carbohydrates should an average meal contain?",
+        "body": "What are two ways to lower cholesterol with food? E.g. Eat more __ and eat less __",
         "answer": "",
         "points": 300,
         "color": "nutrition",
         "activated": false
       },
       {
-        "body": "Why is it important to include more fiber?",
+        "body": "When choosing a food product you should look for __g of fibre and __g of sugar?",
         "answer": "",
         "points": 400,
         "color": "nutrition",
@@ -130,7 +130,7 @@
         "activated": false
       },
       {
-        "body": "List  3 types of exercises that are recommended",
+        "body": "What types of exercises are recommended",
         "answer": "",
         "points": 200,
         "color": "exercise",
@@ -151,7 +151,7 @@
         "activated": false
       },
       {
-        "body": "How many minutes of each type of exercise does the Diabetes Canada recommend per week?",
+        "body": "How many minutes of each type of exercise does the Diabetes Canada recommend?",
         "answer": "",
         "points": 500,
         "color": "exercise",
@@ -170,7 +170,7 @@
         "activated": false
       },
       {
-        "body": "What are \"ABC\"s\" of diabetes? Why are they important?",
+        "body": "How often your cholesterol should be checked?",
         "answer": "",
         "points": 200,
         "color": "complications",
@@ -203,7 +203,7 @@
     "name": "bonus",
     "questions": [
       {
-        "body": "When my blood glucose is at target, I can stop taking my diabetes medication. True or False?",
+        "body": "I should avoid pasta, because I have diabetes. True or False?",
         "answer": "",
         "points": 100,
         "color": "bonus",
@@ -217,21 +217,21 @@
         "activated": false
       },
       {
-        "body": "What medications decrease the amount of new glucose produced by the liver and makes muscle and fat cells more sensitive to insulin?",
+        "body": "Honey and organic coconut sugar is better than white table sugar. True or False?",
         "answer": "",
         "points": 300,
         "color": "bonus",
         "activated": false
       },
       {
-        "body": "What medications work by making cells in the pancreas produce more insulin?",
+        "body": "Alcohol won't impact my blood sugar. True or False?",
         "answer": "",
         "points": 400,
         "color": "bonus",
         "activated": false
       },
       {
-        "body": "Name a pill that should not be taken if you’ve missed your meal",
+        "body": "Eating boiled potatoes will raise my blood sugar the same way as baked potatoes. True or False?",
         "answer": "",
         "points": 500,
         "color": "bonus",
